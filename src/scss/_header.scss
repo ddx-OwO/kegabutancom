@@ -1,0 +1,11 @@
+.h-wrapper:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -106px;
+    width: 100%;
+    height: 200px;
+    background-color: #67d2ff;
+    transform-origin: center top;
+    transform: skewY(-4.5deg);
+}
