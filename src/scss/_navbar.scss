@@ -1,22 +1,21 @@
 .h-menu {
   position: relative;
   display: flex;
-  flex-wrap: wrap; // allow us to do the line break for collapsing content
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between; // space out brand from logo
-  padding: $navbar-padding-y $navbar-padding-x;
-
-  // Because flex properties aren't inherited, we need to redeclare these first
-  // few properties so that content nested within behave properly.
-  > .container,
-  > .container-fluid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
+  justify-content: space-between;
+  padding: .5rem;
+  list-style: none;
+  transform: rotate(-4.5deg);
+  top: -60px;
 }
 
 .h-menu__item {
-  list-item: none;
+  font-family: TeXGyreAdventorBold;
+  font-size: 1.75rem;
+  font-weight: bold;
+
+  .h-menu__link {
+    
+  }
 }
