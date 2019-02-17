@@ -2,12 +2,11 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
   padding: .5rem;
   list-style: none;
   transform: rotate(-4.5deg);
-  top: -60px;
+  top: -70px;
 }
 
 .h-menu__item {
@@ -16,6 +15,25 @@
   font-weight: bold;
 
   .h-menu__link {
-    
+    padding: .5rem .75rem .5rem 0rem;
+
+    &:hover {
+      color: var(--pink);
+    }
   }
+}
+
+@include media-breakpoint-down(md) {
+  .h-menu {
+    top: -20px;
+    justify-content: center;
+  }
+
+  .h-menu__item {
+    font-size: 1.25rem;
+  }
+}
+
+.widget {
+  @include make-col-ready();
 }
