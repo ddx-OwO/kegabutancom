@@ -4,9 +4,14 @@
   flex-wrap: wrap;
   align-items: flex-start;
   padding: .5rem;
-  list-style: none;
+  @include list-unstyled();
   transform: rotate(-4.5deg);
   top: -70px;
+
+  @include media-breakpoint-down(md) {
+    top: -20px;
+    justify-content: center;
+  }
 }
 
 .h-menu__item {
@@ -21,19 +26,8 @@
       color: var(--pink);
     }
   }
-}
 
-@include media-breakpoint-down(md) {
-  .h-menu {
-    top: -20px;
-    justify-content: center;
-  }
-
-  .h-menu__item {
+  @include media-breakpoint-down(md) {
     font-size: 1.25rem;
   }
-}
-
-.widget {
-  @include make-col-ready();
 }
