@@ -1,7 +1,0 @@
-.breadcrumb {
-  background-color: var(--dark);
-
-  @include media-breakpoint-down(md) {
-    flex-direction: column;
-  }
-}
